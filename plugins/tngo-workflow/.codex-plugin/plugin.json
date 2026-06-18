@@ -1,15 +1,15 @@
 {
-  "name": "tngo-codex-workflow",
+  "name": "tngo-workflow",
   "version": "0.1.0",
-  "description": "Reusable Codex workflow plugin with skills and an AGENTS.md installer.",
+  "description": "Reusable TNGO workflow plugin with skills and an AGENTS.md installer.",
   "author": {
     "name": "TNGO"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "TNGO Codex Workflow",
+    "displayName": "TNGO Workflow",
     "shortDescription": "Reusable Codex skills and guidance installer.",
-    "longDescription": "TNGO Codex Workflow packages personal Codex skills and ships a separate installer for merging recommended AGENTS.md guidance into a global or repository instruction file.",
+    "longDescription": "TNGO Workflow packages personal Codex skills and ships a separate installer for merging recommended AGENTS.md guidance into a global or repository instruction file.",
     "developerName": "TNGO",
     "category": "Developer Tools",
     "capabilities": [

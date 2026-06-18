@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PLUGIN_ID="tngo-codex-workflow"
+PLUGIN_ID="tngo-workflow"
 BEGIN_MARKER="<!-- BEGIN ${PLUGIN_ID} AGENTS.md -->"
 END_MARKER="<!-- END ${PLUGIN_ID} AGENTS.md -->"
 

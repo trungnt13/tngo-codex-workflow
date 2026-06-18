@@ -1,6 +1,6 @@
 ---
 name: install-codex-guidance
-description: Install or update the AGENTS.md guidance bundled with the TNGO Codex Workflow plugin. Use when the user asks to reproduce plugin AGENTS.md behavior, merge recommended Codex instructions, or install this plugin's durable guidance globally or into a repo.
+description: Install or update the AGENTS.md guidance bundled with the TNGO Workflow plugin. Use when the user asks to reproduce plugin AGENTS.md behavior, merge recommended Codex instructions, or install this plugin's durable guidance globally or into a repo.
 ---
 
 # Install Codex Guidance
@@ -33,8 +33,8 @@ bash "<plugin-root>/scripts/install-agents-md.sh" --global --dry-run
 The installer is idempotent. It writes a managed block bounded by:
 
 ```text
-<!-- BEGIN tngo-codex-workflow AGENTS.md -->
-<!-- END tngo-codex-workflow AGENTS.md -->
+<!-- BEGIN tngo-workflow AGENTS.md -->
+<!-- END tngo-workflow AGENTS.md -->
 ```
 
 On later runs, it replaces only that block.

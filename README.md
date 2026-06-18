@@ -1,4 +1,4 @@
-# TNGO Codex Workflow
+# TNGO Workflow
 
 Reusable Codex workflow plugin for skills and explicit guidance installation.
 
@@ -7,19 +7,19 @@ Reusable Codex workflow plugin for skills and explicit guidance installation.
 Register the GitHub marketplace:
 
 ```bash
-codex plugin marketplace add <owner>/tngo-codex-workflow --ref main
+codex plugin marketplace add <owner>/tngo-workflow --ref main
 ```
 
 Install the plugin:
 
 ```bash
-codex plugin add tngo-codex-workflow@tngo-codex-workflow
+codex plugin add tngo-workflow@tngo-workflow
 ```
 
 The plugin is published under:
 
 ```text
-plugins/tngo-codex-workflow/
+plugins/tngo-workflow/
 ```
 
 This plugin intentionally does not rely on `AGENTS.md` being loaded from inside the plugin. Codex does not treat plugin-local `AGENTS.md` as active instructions. Instead, the plugin ships a template and an installer that merges the template into the real global or repository `AGENTS.md`.
@@ -38,33 +38,33 @@ This plugin intentionally does not rely on `AGENTS.md` being loaded from inside 
 Preview global guidance install from the plugin directory:
 
 ```bash
-bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --global --dry-run
+bash plugins/tngo-workflow/scripts/install-agents-md.sh --global --dry-run
 ```
 
 Apply global guidance install from the plugin directory:
 
 ```bash
-bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --global
+bash plugins/tngo-workflow/scripts/install-agents-md.sh --global
 ```
 
 Preview repository install:
 
 ```bash
-bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --repo /path/to/repo --dry-run
+bash plugins/tngo-workflow/scripts/install-agents-md.sh --repo /path/to/repo --dry-run
 ```
 
 Apply repository install:
 
 ```bash
-bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --repo /path/to/repo
+bash plugins/tngo-workflow/scripts/install-agents-md.sh --repo /path/to/repo
 ```
 
 The installer writes a managed block:
 
 ```text
-<!-- BEGIN tngo-codex-workflow AGENTS.md -->
+<!-- BEGIN tngo-workflow AGENTS.md -->
 ...
-<!-- END tngo-codex-workflow AGENTS.md -->
+<!-- END tngo-workflow AGENTS.md -->
 ```
 
 Later runs replace only that block. Existing target files are backed up before changes.
