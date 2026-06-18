@@ -7,7 +7,7 @@ Reusable Codex workflow plugin for skills and explicit guidance installation.
 Register the GitHub marketplace:
 
 ```bash
-codex plugin marketplace add <owner>/tngo-workflow --ref main
+codex plugin marketplace add trungnt13/tngo-workflow --ref main
 ```
 
 Install the plugin:

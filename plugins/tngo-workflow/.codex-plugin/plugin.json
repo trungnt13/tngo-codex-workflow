@@ -5,6 +5,11 @@
   "author": {
     "name": "TNGO"
   },
+  "homepage": "https://github.com/trungnt13/tngo-workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trungnt13/tngo-workflow.git"
+  },
   "skills": "./skills/",
   "interface": {
     "displayName": "TNGO Workflow",
