@@ -2,6 +2,26 @@
 
 Reusable Codex workflow plugin for skills and explicit guidance installation.
 
+## Install From GitHub
+
+Register the GitHub marketplace:
+
+```bash
+codex plugin marketplace add <owner>/tngo-codex-workflow --ref main
+```
+
+Install the plugin:
+
+```bash
+codex plugin add tngo-codex-workflow@tngo-codex-workflow
+```
+
+The plugin is published under:
+
+```text
+plugins/tngo-codex-workflow/
+```
+
 This plugin intentionally does not rely on `AGENTS.md` being loaded from inside the plugin. Codex does not treat plugin-local `AGENTS.md` as active instructions. Instead, the plugin ships a template and an installer that merges the template into the real global or repository `AGENTS.md`.
 
 ## Contents
@@ -15,28 +35,28 @@ This plugin intentionally does not rely on `AGENTS.md` being loaded from inside 
 
 ## Install Guidance
 
-Preview global guidance install:
+Preview global guidance install from the plugin directory:
 
 ```bash
-bash scripts/install-agents-md.sh --global --dry-run
+bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --global --dry-run
 ```
 
-Apply global guidance install:
+Apply global guidance install from the plugin directory:
 
 ```bash
-bash scripts/install-agents-md.sh --global
+bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --global
 ```
 
 Preview repository install:
 
 ```bash
-bash scripts/install-agents-md.sh --repo /path/to/repo --dry-run
+bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --repo /path/to/repo --dry-run
 ```
 
 Apply repository install:
 
 ```bash
-bash scripts/install-agents-md.sh --repo /path/to/repo
+bash plugins/tngo-codex-workflow/scripts/install-agents-md.sh --repo /path/to/repo
 ```
 
 The installer writes a managed block:

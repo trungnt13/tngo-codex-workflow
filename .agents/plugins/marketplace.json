@@ -1,0 +1,20 @@
+{
+  "name": "tngo-codex-workflow",
+  "interface": {
+    "displayName": "TNGO Codex Workflow"
+  },
+  "plugins": [
+    {
+      "name": "tngo-codex-workflow",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tngo-codex-workflow"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
