@@ -1,0 +1,9 @@
+.claude/
+.DS_Store
+__pycache__/
+*.bak
+*.bak.*
+_tmp_deep_clean_validation.*
+_tmp_deep_clean_references/
+.deep-clean
+.deep-clean-state.json

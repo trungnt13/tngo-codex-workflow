@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oracle"
+  short_description: "Ask Claude or Cursor for hard reviews"
+  default_prompt: "Use $oracle to get an independent multi-perspective critical review of this architecture plan."

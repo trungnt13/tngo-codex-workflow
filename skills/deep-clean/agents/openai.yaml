@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Clean"
+  short_description: "Behavior-safe cleanup for Python, Rust, C/C++"
+  default_prompt: "Use $deep-clean to reduce executable code safely in this repository."

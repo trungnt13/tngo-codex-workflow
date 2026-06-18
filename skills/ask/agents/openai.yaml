@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask"
+  short_description: "Read-only, evidence-backed answers"
+  default_prompt: "Use $ask to answer from first principles without editing the workspace."
