@@ -29,20 +29,18 @@ This plugin intentionally does not rely on `AGENTS.md` being loaded from inside 
 - `skills/count-loc`: countable executable LOC metrics for supported code targets.
 - `skills/deep-research`: phase-tuned, source-grounded research workflow.
 - `skills/deep-clean`: behavior-preserving cleanup workflow.
-- `skills/install-codex-guidance`: workflow for applying the bundled guidance.
-- `templates/AGENTS.plugin.md`: guidance copied from the local Codex home at packaging time.
-- `scripts/install-agents-md.sh`: installer for global or repo `AGENTS.md`.
+- `skills/install-agentsmd`: workflow, template, and installer for applying the bundled guidance.
 
 ## Install Guidance
 
 Apply global guidance install from the repository root. This overwrites `~/.codex/AGENTS.md`:
 
 ```bash
-bash plugins/tngo/scripts/install-agents-md.sh
+bash plugins/tngo/skills/install-agentsmd/scripts/install-agents-md.sh
 ```
 
 Apply repository guidance install from the repository root. This creates `AGENTS.md` at the current git repo root and fails if that file already exists:
 
 ```bash
-bash plugins/tngo/scripts/install-agents-md.sh --repo
+bash plugins/tngo/skills/install-agentsmd/scripts/install-agents-md.sh --repo
 ```

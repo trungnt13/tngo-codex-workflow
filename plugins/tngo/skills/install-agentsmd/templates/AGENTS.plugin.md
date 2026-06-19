@@ -1,9 +1,7 @@
 - For simple work:
   - Use NO subagent if main agent is faster than handoff + check + merge.
-  - Use one _GPT-5.3 Codex Spark (xhigh)_ subagent only when parallel work saves time and is easy to verify.
-- For other work:
-  - Use subagents to read large context, explore noisy areas, add expertise, make focused edits, collect evidence, validate, or review risks.
-  - Subagents must state uncertainty and gaps
+  - Use one _GPT-5.4 (high)_ subagent only when parallel work saves time and is easy to verify.
+- For other work, use subagents to read large context, explore noisy areas, add domain specific expertise, make focused edits, collect evidence, validate, or review risks.
 
 **Main Agent MUST**
 - Keep working unless blocked
@@ -15,9 +13,8 @@
 - When spawning subagents with `fork_turns: "all"`; NEVER use `"model"` and `reasoning_effort`
 
 **SUBAGENT MODEL ROUTING**
-- small context + clear task -> _GPT-5.3 Codex Spark (high)_
-- small/medium context + some ambinguity -> _GPT-5.3 Codex Spark (xhigh)_
-- large context + clear/medium ambiguity -> _GPT-5.4 (high)_
+- small/medium context + clear task -> _GPT-5.3 Codex Spark (xhigh)_
+- large context + low ambiguity -> _GPT-5.4 (high)_
 - large context + high ambiguity -> _GPT-5.4 (xhigh)_
 - small/medium context + high ambiguity -> _GPT-5.5 (high)_
 - final hard judgment / unresolved high-risk decision -> _GPT-5.5 (xhigh)_

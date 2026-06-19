@@ -23,8 +23,8 @@ elif [ "$#" -ne 0 ]; then
 fi
 
 script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
-plugin_root="$(cd -- "${script_dir}/.." && pwd -P)"
-template_file="${plugin_root}/templates/AGENTS.plugin.md"
+skill_dir="$(cd -- "${script_dir}/.." && pwd -P)"
+template_file="${skill_dir}/templates/AGENTS.plugin.md"
 
 if [ ! -f "$template_file" ]; then
   echo "error: missing template: $template_file" >&2

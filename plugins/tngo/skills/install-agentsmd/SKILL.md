@@ -1,5 +1,5 @@
 ---
-name: install-codex-guidance
+name: install-agentsmd
 description: Install the AGENTS.md guidance bundled with the TNGO Workflow plugin. Use when the user asks to reproduce plugin AGENTS.md behavior or install this plugin's durable guidance globally or into a repo.
 ---
 
@@ -26,20 +26,19 @@ Only `--repo` is supported. With no arguments, the installer performs a global i
    - If the user says this repo or current project, use `--repo`.
 2. If the destination is not explicit, ask whether to install to `~/.codex/AGENTS.md` or the current repo root `AGENTS.md`, then wait for the user's choice before running commands.
 3. Resolve this skill directory from the loaded `SKILL.md` path.
-4. Resolve the plugin root as two directories above this skill directory.
-5. Run the installer with the selected destination arguments.
-6. Report the target path. If a repository install is blocked because `AGENTS.md` already exists, report that path and do not modify it.
+4. Run the skill-local installer with the selected destination arguments.
+5. Report the target path. If a repository install is blocked because `AGENTS.md` already exists, report that path and do not modify it.
 
 ## Commands
 
 Install globally, overwriting `~/.codex/AGENTS.md`:
 
 ```bash
-bash "<plugin-root>/scripts/install-agents-md.sh"
+bash "<skill-dir>/scripts/install-agents-md.sh"
 ```
 
 Install into the current git repository, only if `AGENTS.md` does not already exist:
 
 ```bash
-bash "<plugin-root>/scripts/install-agents-md.sh" --repo
+bash "<skill-dir>/scripts/install-agents-md.sh" --repo
 ```
