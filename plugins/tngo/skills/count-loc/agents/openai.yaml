@@ -1,0 +1,4 @@
+interface:
+  display_name: "Count LOC"
+  short_description: "Count executable LOC for code targets"
+  default_prompt: "Use $count-loc to count executable LOC for this repository."

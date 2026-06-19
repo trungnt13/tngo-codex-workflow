@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: "Run phase-tuned, source-grounded research with Codex subagents."
+  default_prompt: "Use $deep-research to investigate a topic, delegate discovery, verification, and audit work to research subagents, and save a cited Markdown report."

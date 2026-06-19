@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "tngo-workflow",
+      "name": "tngo",
       "source": {
         "source": "local",
-        "path": "./plugins/tngo-workflow"
+        "path": "./plugins/tngo"
       },
       "policy": {
         "installation": "AVAILABLE",

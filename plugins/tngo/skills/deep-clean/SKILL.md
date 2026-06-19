@@ -29,12 +29,14 @@ Decline or narrow the task when target files are outside this set.
 
 ## Start Gate
 
-Before spawning cleanup-candidate subagents or editing source files, resolve this skill directory, then run the gate from the repository root:
+Before spawning cleanup-candidate subagents or editing source files, resolve this skill directory and the companion `$count-loc` skill directory, then run the gate from the repository root:
 
 ```bash
 python3 "$SKILL_DIR/scripts/deep_clean_gate.py" <target...>
-python3 "$SKILL_DIR/scripts/countable_loc.py" <target...>
+python3 "$COUNT_LOC_SKILL_DIR/scripts/countable_loc.py" <target...>
 ```
+
+In the bundled plugin layout, `COUNT_LOC_SKILL_DIR` is usually the sibling directory `../count-loc` relative to this skill. Load `$count-loc` whenever countable LOC details or before/after metric comparisons are needed.
 
 Block by default when:
 
@@ -156,4 +158,5 @@ references/python.md        Python-specific cleanup rules
 references/rust.md          Rust-specific cleanup rules
 references/c_cpp.md         C/C++-specific cleanup rules
 references/agent_packets.md subagent handoff packet templates
+$count-loc                  countable executable LOC metric script and rules
 ```

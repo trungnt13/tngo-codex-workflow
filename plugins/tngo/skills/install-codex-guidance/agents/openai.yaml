@@ -1,0 +1,4 @@
+interface:
+  display_name: "Install Guidance"
+  short_description: "Install the bundled AGENTS.md guidance"
+  default_prompt: "Use $install-codex-guidance to ask whether to install the bundled AGENTS.md guidance into ~/.codex/AGENTS.md or the current repo root AGENTS.md first."

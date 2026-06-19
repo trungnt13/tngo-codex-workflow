@@ -1,4 +1,0 @@
-interface:
-  display_name: "Install Guidance"
-  short_description: "Merge the bundled AGENTS.md guidance"
-  default_prompt: "Use $install-codex-guidance to install the bundled AGENTS.md guidance into my global or repository instructions."
