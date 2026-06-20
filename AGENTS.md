@@ -3,7 +3,7 @@
 ## Rules
 
 - Whenever finish a features review with independent subagent and refine for at least 1 iteration
-- Commit the code when finished a feature
+- Commit the code when finished a feature, PUSH ONLY ALLOWED WITH EXPLICITE USER CONFIRMATION
 
 
 ## Install From GitHub
