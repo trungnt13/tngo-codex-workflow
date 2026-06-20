@@ -1,7 +1,7 @@
 {
   "name": "tngo",
-  "version": "0.1.0+codex.20260619130440",
-  "description": "Reusable TNGO workflow plugin with skills and an AGENTS.md installer.",
+  "version": "0.1.0+codex.20260619194818",
+  "description": "Reusable TNGO workflow plugin with skills and an AGENTS.md/config.toml installer.",
   "author": {
     "name": "TNGO"
   },
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "TNGO Workflow",
     "shortDescription": "Reusable Codex skills and guidance installer.",
-    "longDescription": "TNGO Workflow packages personal Codex skills, including read-only answers, deep research, cleanup workflows, and a separate installer for merging recommended AGENTS.md guidance into a global or repository instruction file.",
+    "longDescription": "TNGO Workflow packages personal Codex skills, including read-only answers, deep research, cleanup workflows, and a separate installer for applying recommended AGENTS.md guidance plus a bundled global config.toml.",
     "developerName": "TNGO",
     "category": "Developer Tools",
     "capabilities": [
@@ -23,7 +23,7 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Install my Codex AGENTS.md guidance",
+      "Install my Codex AGENTS.md guidance and config",
       "Use my read-only answer workflow",
       "Run a deep research workflow"
     ],
