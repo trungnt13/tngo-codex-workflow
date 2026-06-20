@@ -1,0 +1,4 @@
+interface:
+  display_name: "Install Guidance"
+  short_description: "Install bundled AGENTS.md guidance and Codex config"
+  default_prompt: "Use $install-agentsmd to ask whether to install the bundled AGENTS.md guidance and config.toml into ~/.codex, or only AGENTS.md into the current repo root."
